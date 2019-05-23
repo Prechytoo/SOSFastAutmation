@@ -6,13 +6,13 @@
       <class name="SOSFastAutomation.SOSFast.Details">
         <methods>
           <include name="verifyPageTitleTest"/>
+          <include name="verifyLogin"/>
           <include name="tearDown"/>
           <include name="verifySignButton"/>
-          <include name="verifyEmail"/>
           <include name="verifySignIn"/>
-          <include name="verifyPassword"/>
           <include name="setup"/>
           <include name="verifyIcon"/>
+          <include name="clickIcon"/>
         </methods>
       </class> <!-- SOSFastAutomation.SOSFast.Details -->
     </classes>
