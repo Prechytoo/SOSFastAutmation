@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SOSFastAutomation.SOSFast.Signin">
+      <class name="SOSFastAutomation.SOSFast.Details">
         <methods>
-          <include name="signin"/>
-          <include name="VerifyLogin"/>
+          <include name="setup"/>
+          <include name="Mydetails"/>
         </methods>
-      </class> <!-- SOSFastAutomation.SOSFast.Signin -->
+      </class> <!-- SOSFastAutomation.SOSFast.Details -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
