@@ -5,8 +5,19 @@
     <classes>
       <class name="SOSFastAutomation.SOSFast.Details">
         <methods>
+<<<<<<< HEAD
           <include name="setup"/>
           <include name="Mydetails"/>
+=======
+          <include name="verifyPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="verifySignButton"/>
+          <include name="verifyEmail"/>
+          <include name="verifySignIn"/>
+          <include name="verifyPassword"/>
+          <include name="setup"/>
+          <include name="verifyIcon"/>
+>>>>>>> a59a906ba812ae45eca9a88613be700d875ea4f3
         </methods>
       </class> <!-- SOSFastAutomation.SOSFast.Details -->
     </classes>
