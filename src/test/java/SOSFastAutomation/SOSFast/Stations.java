@@ -29,8 +29,6 @@ public class Stations {
 		driver.findElement(By.xpath(" //input[@id='searchTextField']")).sendKeys("CPT062 Brackenfell, Brackenfell South, Cape Town, South Africa");
 		driver.findElement(By.xpath("//mat-icon[@class='mat-icon mat-primary material-icons']")).click();
 
-		
-		
 	}
 
 	@Test(priority = 3)
