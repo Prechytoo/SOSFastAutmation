@@ -6,7 +6,6 @@
       <class name="SOSFastAutomation.SOSFast.Details">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyDetails"/>
           <include name="setup"/>
           <include name="verifyIcon"/>
         </methods>
