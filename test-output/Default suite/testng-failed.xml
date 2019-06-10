@@ -5,7 +5,12 @@
     <classes>
       <class name="SOSFastAutomation.SOSFast.Details">
         <methods>
+          <include name="verifyLogin"/>
           <include name="tearDown"/>
+          <include name="verifySignButton"/>
+          <include name="clickAllLinks"/>
+          <include name="returnToMydeails"/>
+          <include name="verifySignIn"/>
           <include name="setup"/>
           <include name="verifyIcon"/>
         </methods>

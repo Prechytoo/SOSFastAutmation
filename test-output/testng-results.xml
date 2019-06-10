@@ -2,36 +2,43 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25701" started-at="2019-05-31T12:20:29Z" finished-at="2019-05-31T12:20:54Z">
+  <suite name="Suite" duration-ms="24071" started-at="2019-06-07T13:09:33Z" finished-at="2019-06-07T13:09:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25701" started-at="2019-05-31T12:20:29Z" finished-at="2019-05-31T12:20:54Z">
+    <test name="ManageTest" duration-ms="24071" started-at="2019-06-07T13:09:33Z" finished-at="2019-06-07T13:09:57Z">
       <class name="SOSFastAutomation.SOSFast.ManageProfile">
-        <test-method status="PASS" signature="setup()[pri:0, instance:SOSFastAutomation.SOSFast.ManageProfile@46d56d67]" name="setup" is-config="true" duration-ms="8558" started-at="2019-05-31T12:20:29Z" finished-at="2019-05-31T12:20:37Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:SOSFastAutomation.SOSFast.ManageProfile@4e3e11b9]" name="setup" is-config="true" duration-ms="3457" started-at="2019-06-07T13:09:33Z" finished-at="2019-06-07T13:09:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[headless]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifySignIn()[pri:1, instance:SOSFastAutomation.SOSFast.ManageProfile@46d56d67]" name="verifySignIn" duration-ms="123" started-at="2019-05-31T12:20:37Z" finished-at="2019-05-31T12:20:37Z">
+        <test-method status="PASS" signature="verifySignIn()[pri:1, instance:SOSFastAutomation.SOSFast.ManageProfile@4e3e11b9]" name="verifySignIn" duration-ms="4282" started-at="2019-06-07T13:09:36Z" finished-at="2019-06-07T13:09:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignIn -->
-        <test-method status="PASS" signature="verifyLogin()[pri:2, instance:SOSFastAutomation.SOSFast.ManageProfile@46d56d67]" name="verifyLogin" duration-ms="3314" started-at="2019-05-31T12:20:37Z" finished-at="2019-05-31T12:20:41Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:2, instance:SOSFastAutomation.SOSFast.ManageProfile@4e3e11b9]" name="verifyLogin" duration-ms="3339" started-at="2019-06-07T13:09:40Z" finished-at="2019-06-07T13:09:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifySignButton()[pri:3, instance:SOSFastAutomation.SOSFast.ManageProfile@46d56d67]" name="verifySignButton" duration-ms="132" started-at="2019-05-31T12:20:41Z" finished-at="2019-05-31T12:20:41Z">
+        <test-method status="PASS" signature="verifySignButton()[pri:3, instance:SOSFastAutomation.SOSFast.ManageProfile@4e3e11b9]" name="verifySignButton" duration-ms="100" started-at="2019-06-07T13:09:44Z" finished-at="2019-06-07T13:09:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignButton -->
-        <test-method status="PASS" signature="VerifyFilter()[pri:4, instance:SOSFastAutomation.SOSFast.ManageProfile@46d56d67]" name="VerifyFilter" duration-ms="12619" started-at="2019-05-31T12:20:41Z" finished-at="2019-05-31T12:20:53Z">
+        <test-method status="PASS" signature="VerifyFilter()[pri:4, instance:SOSFastAutomation.SOSFast.ManageProfile@4e3e11b9]" name="VerifyFilter" duration-ms="12136" started-at="2019-06-07T13:09:44Z" finished-at="2019-06-07T13:09:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFilter -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SOSFastAutomation.SOSFast.ManageProfile@46d56d67]" name="tearDown" is-config="true" duration-ms="929" started-at="2019-05-31T12:20:53Z" finished-at="2019-05-31T12:20:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SOSFastAutomation.SOSFast.ManageProfile@4e3e11b9]" name="tearDown" is-config="true" duration-ms="723" started-at="2019-06-07T13:09:56Z" finished-at="2019-06-07T13:09:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- SOSFastAutomation.SOSFast.ManageProfile -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ManageTest -->
+  </suite> <!-- Suite -->
 </testng-results>

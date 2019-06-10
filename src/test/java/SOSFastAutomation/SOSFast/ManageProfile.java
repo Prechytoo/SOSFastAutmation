@@ -6,31 +6,43 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 
 public class ManageProfile {
 	
+
 	 WebDriver driver;
 	
 	@BeforeClass
-	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe" );
-		driver = new ChromeDriver();
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://www.sosfast.co.za/");
+	@Parameters("browser")
+	public void setup(String browser) {
+		if (browser.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+			driver = new ChromeDriver();
+			
+			
+		} else if (browser.equalsIgnoreCase("headless")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+			ChromeOptions options = new ChromeOptions(); // telling the app to open with headless driver
+			options.addArguments("headless");
+			options.addArguments("window-size=1200x600"); // give it a size to open the app
+			driver = new ChromeDriver(options); // the last step for headless driver this one is opening using headless
+												
+		}
 	}
-  //@Test
-  //public void f() {
-	  
+		
+	
 		@Test (priority=1)
 		public void verifySignIn(){
+			driver.navigate().to("https://www.sosfast.co.za");
 			driver.findElement(By.id("signIn")).click();
 			System.out.println("SingIn");
-			
+	
 		}
 		
 		@Test (priority=2)
