@@ -19,12 +19,11 @@ public class ManageProfile {
 	 WebDriver driver;
 	
 	@BeforeClass
-	@Parameters("browser")
+	@Parameters({"browser","wait"})
 	public void setup(String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 			driver = new ChromeDriver();
-			
 			
 		} else if (browser.equalsIgnoreCase("headless")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
@@ -35,7 +34,7 @@ public class ManageProfile {
 												
 		}
 	}
-		
+
 	
 		@Test (priority=1)
 		public void verifySignIn(){
@@ -66,17 +65,21 @@ public class ManageProfile {
 				driver.findElement(By.id("dashboard-profiles")).click();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-dashboard[1]/div[2]/app-profiles[1]/div[3]/div[1]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]")).sendKeys("The"); //by first name
-				Thread.sleep(3000);
+				Thread.sleep(2000);
+				System.out.println("first name clicked");
 				driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-dashboard[1]/div[2]/app-profiles[1]/div[3]/div[1]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]")).sendKeys(Keys.ENTER);
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-dashboard[1]/div[2]/app-profiles[1]/div[3]/div[1]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]")).clear();
+				System.out.println("Textbox cleared");
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-dashboard[1]/div[2]/app-profiles[1]/div[3]/div[1]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]")).sendKeys("Mab");   //by last name
 				driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-dashboard[1]/div[2]/app-profiles[1]/div[3]/div[1]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]")).sendKeys(Keys.ENTER);
+				System.out.println("last name clicked");
 				Thread.sleep(2000);
+				
 			}
 			
-				
+		
 			@AfterClass
 			public void tearDown() {
 				driver.quit();

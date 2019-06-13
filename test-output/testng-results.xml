@@ -1,44 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="4" failed="0" ignored="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="24071" started-at="2019-06-07T13:09:33Z" finished-at="2019-06-07T13:09:57Z">
+  <suite name="Suite" duration-ms="46" started-at="2019-06-12T06:28:26Z" finished-at="2019-06-12T06:28:26Z">
     <groups>
     </groups>
-    <test name="ManageTest" duration-ms="24071" started-at="2019-06-07T13:09:33Z" finished-at="2019-06-07T13:09:57Z">
+    <test name="Test" duration-ms="46" started-at="2019-06-12T06:28:26Z" finished-at="2019-06-12T06:28:26Z">
       <class name="SOSFastAutomation.SOSFast.ManageProfile">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:SOSFastAutomation.SOSFast.ManageProfile@4e3e11b9]" name="setup" is-config="true" duration-ms="3457" started-at="2019-06-07T13:09:33Z" finished-at="2019-06-07T13:09:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[headless]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:SOSFastAutomation.SOSFast.ManageProfile@670b40af]" name="setup" is-config="true" duration-ms="0" started-at="2019-06-12T06:28:26Z" finished-at="2019-06-12T06:28:26Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method setup requires 1 parameters but 2 were supplied in the BeforeClass annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method setup requires 1 parameters but 2 were supplied in the BeforeClass annotation.
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:415)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifySignIn()[pri:1, instance:SOSFastAutomation.SOSFast.ManageProfile@4e3e11b9]" name="verifySignIn" duration-ms="4282" started-at="2019-06-07T13:09:36Z" finished-at="2019-06-07T13:09:40Z">
+        <test-method status="SKIP" signature="verifySignIn()[pri:1, instance:SOSFastAutomation.SOSFast.ManageProfile@670b40af]" name="verifySignIn" duration-ms="0" started-at="2019-06-12T06:28:26Z" finished-at="2019-06-12T06:28:26Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method setup requires 1 parameters but 2 were supplied in the BeforeClass annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method setup requires 1 parameters but 2 were supplied in the BeforeClass annotation.
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:415)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignIn -->
-        <test-method status="PASS" signature="verifyLogin()[pri:2, instance:SOSFastAutomation.SOSFast.ManageProfile@4e3e11b9]" name="verifyLogin" duration-ms="3339" started-at="2019-06-07T13:09:40Z" finished-at="2019-06-07T13:09:44Z">
+        <test-method status="SKIP" signature="verifyLogin()[pri:2, instance:SOSFastAutomation.SOSFast.ManageProfile@670b40af]" name="verifyLogin" duration-ms="0" started-at="2019-06-12T06:28:26Z" finished-at="2019-06-12T06:28:26Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method setup requires 1 parameters but 2 were supplied in the BeforeClass annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method setup requires 1 parameters but 2 were supplied in the BeforeClass annotation.
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:415)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifySignButton()[pri:3, instance:SOSFastAutomation.SOSFast.ManageProfile@4e3e11b9]" name="verifySignButton" duration-ms="100" started-at="2019-06-07T13:09:44Z" finished-at="2019-06-07T13:09:44Z">
+        <test-method status="SKIP" signature="verifySignButton()[pri:3, instance:SOSFastAutomation.SOSFast.ManageProfile@670b40af]" name="verifySignButton" duration-ms="0" started-at="2019-06-12T06:28:26Z" finished-at="2019-06-12T06:28:26Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method setup requires 1 parameters but 2 were supplied in the BeforeClass annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method setup requires 1 parameters but 2 were supplied in the BeforeClass annotation.
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:415)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignButton -->
-        <test-method status="PASS" signature="VerifyFilter()[pri:4, instance:SOSFastAutomation.SOSFast.ManageProfile@4e3e11b9]" name="VerifyFilter" duration-ms="12136" started-at="2019-06-07T13:09:44Z" finished-at="2019-06-07T13:09:56Z">
+        <test-method status="SKIP" signature="VerifyFilter()[pri:4, instance:SOSFastAutomation.SOSFast.ManageProfile@670b40af]" name="VerifyFilter" duration-ms="0" started-at="2019-06-12T06:28:26Z" finished-at="2019-06-12T06:28:26Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method setup requires 1 parameters but 2 were supplied in the BeforeClass annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method setup requires 1 parameters but 2 were supplied in the BeforeClass annotation.
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:415)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFilter -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SOSFastAutomation.SOSFast.ManageProfile@4e3e11b9]" name="tearDown" is-config="true" duration-ms="723" started-at="2019-06-07T13:09:56Z" finished-at="2019-06-07T13:09:57Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:SOSFastAutomation.SOSFast.ManageProfile@670b40af]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-06-12T06:28:26Z" finished-at="2019-06-12T06:28:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- SOSFastAutomation.SOSFast.ManageProfile -->
-    </test> <!-- ManageTest -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

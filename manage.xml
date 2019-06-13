@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="ManageTest">
-  
-  <parameter name = "browser"  value = "headless"/>
-    <parameter name = "wait"  value = "10000"/>
-  
+  <test thread-count="5" name="Test">
+  <parameter name = "browser" value = "headless"/>
+  <parameter name = "wait" value = "2000"/>
     <classes>
       <class name="SOSFastAutomation.SOSFast.ManageProfile"/>
     </classes>
-  </test> <!-- detailsTest -->
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

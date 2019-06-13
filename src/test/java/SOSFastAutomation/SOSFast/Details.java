@@ -31,15 +31,8 @@ public class Details {
 			ChromeOptions options = new ChromeOptions(); // telling the app to open with headless driver
 			options.addArguments("headless");
 			options.addArguments("window-size=1200x600"); // give it a size to open the app
-			driver = new ChromeDriver(options); // the last step fpr headless driver this one is opening using headless
-												
-			// driver = new ChromeDriver(); //for open you webdriver
-			// get to main page
-		}
-
-		// System.out.println("Title of the page:" + driver.getTitle());
-		// System.out.println("The current URL of the page:" + driver.getCurrentUrl());
-
+			driver = new ChromeDriver(options); // the last step for headless driver this one is opening using headless
+		}									
 	}
 
 	@Test(priority = 1)
@@ -120,6 +113,8 @@ public class Details {
 		driver.findElement(By.xpath("html[1]/body[1]/app-root[1]/app-dashboard[1]/div[1]/a[8]")).click();
 		System.out.println("Mydetails clicked");
 
+		
+		
 	}
 
 	@Test(priority = 6)
@@ -179,7 +174,6 @@ public class Details {
 		driver.findElement(By.xpath(
 				"/html[1]/body[1]/app-root[1]/app-dashboard[1]/div[2]/app-user-detailed-info[1]/div[1]/div[2]/mat-form-field[14]/div[1]/div[1]/div[1]/input[1]"))
 				.clear();
-
 	}
 
 	@AfterClass
@@ -189,5 +183,4 @@ public class Details {
 
 	{
 	}
-
 }
