@@ -2,19 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="wait" value="2000"/>
-    <parameter name="browser" value="headless"/>
+    <parameter name="wait" value="1000"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="SOSFastAutomation.SOSFast.ManageProfile">
+      <class name="SOSFastAutomation.SOSFast.Details">
         <methods>
-          <include name="setup"/>
-          <include name="verifySignIn"/>
           <include name="tearDown"/>
-          <include name="verifyLogin"/>
-          <include name="verifySignButton"/>
-          <include name="VerifyFilter"/>
+          <include name="setup"/>
+          <include name="verifyIcon"/>
         </methods>
-      </class> <!-- SOSFastAutomation.SOSFast.ManageProfile -->
+      </class> <!-- SOSFastAutomation.SOSFast.Details -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
