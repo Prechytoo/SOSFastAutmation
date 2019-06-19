@@ -1,54 +1,117 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="4" passed="3">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="89343" started-at="2019-06-19T13:30:34Z" finished-at="2019-06-19T13:32:03Z">
-    <groups>
-    </groups>
-    <test name="Test" duration-ms="89343" started-at="2019-06-19T13:30:34Z" finished-at="2019-06-19T13:32:03Z">
-      <class name="SOSFastAutomation.SOSFast.NewsHead">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:SOSFastAutomation.SOSFast.NewsHead@4439f31e]" name="setup" is-config="true" duration-ms="2627" started-at="2019-06-19T15:30:34Z" finished-at="2019-06-19T15:30:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[headless]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="announcement()[pri:0, instance:SOSFastAutomation.SOSFast.NewsHead@4439f31e]" name="announcement" duration-ms="67085" started-at="2019-06-19T15:30:36Z" finished-at="2019-06-19T15:31:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- announcement -->
-        <test-method status="FAIL" signature="deshboardbtn()[pri:0, instance:SOSFastAutomation.SOSFast.NewsHead@4439f31e]" name="deshboardbtn" duration-ms="5055" started-at="2019-06-19T15:31:43Z" finished-at="2019-06-19T15:31:49Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='dashboard']"}
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 19 15:30:34 CAT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>89 seconds (89343 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='SOSFastAutomation.SOSFast.NewsHead.deshboardbtn()'><b>deshboardbtn</b><br>Test class: SOSFastAutomation.SOSFast.NewsHead</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id=&apos;dashboard&apos;]&quot;}
   (Session info: headless chrome=74.0.3729.169)
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ANATHI-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ANATHI-PC&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\BOBBYC~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64982}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
 Session ID: d62b690d1182a11461b0b48cc2cb3b84
-*** Element info: {Using=xpath, value=//a[@id='dashboard']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='dashboard']"}
+*** Element info: {Using=xpath, value=//a[@id=&apos;dashboard&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at SOSFastAutomation.SOSFast.NewsHead.deshboardbtn(NewsHead.java:50)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1926004335", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1926004335'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id=&apos;dashboard&apos;]&quot;}
   (Session info: headless chrome=74.0.3729.169)
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ANATHI-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ANATHI-PC&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\BOBBYC~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64982}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
 Session ID: d62b690d1182a11461b0b48cc2cb3b84
-*** Element info: {Using=xpath, value=//a[@id='dashboard']}
+*** Element info: {Using=xpath, value=//a[@id=&apos;dashboard&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -90,21 +153,32 @@ Session ID: d62b690d1182a11461b0b48cc2cb3b84
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deshboardbtn -->
-        <test-method status="PASS" signature="searchblue()[pri:0, instance:SOSFastAutomation.SOSFast.NewsHead@4439f31e]" name="searchblue" duration-ms="814" started-at="2019-06-19T15:31:49Z" finished-at="2019-06-19T15:31:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchblue -->
-        <test-method status="PASS" signature="testParameter()[pri:0, instance:SOSFastAutomation.SOSFast.NewsHead@4439f31e]" name="testParameter" duration-ms="13745" started-at="2019-06-19T15:31:49Z" finished-at="2019-06-19T15:32:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testParameter -->
-      </class> <!-- SOSFastAutomation.SOSFast.NewsHead -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
-</testng-results>
+</pre></div></td>
+<td>5</td>
+<td>SOSFastAutomation.SOSFast.NewsHead@4439f31e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='SOSFastAutomation.SOSFast.NewsHead.announcement()'><b>announcement</b><br>Test class: SOSFastAutomation.SOSFast.NewsHead</td>
+<td></td>
+<td>67</td>
+<td>SOSFastAutomation.SOSFast.NewsHead@4439f31e</td></tr>
+<tr>
+<td title='SOSFastAutomation.SOSFast.NewsHead.searchblue()'><b>searchblue</b><br>Test class: SOSFastAutomation.SOSFast.NewsHead</td>
+<td></td>
+<td>0</td>
+<td>SOSFastAutomation.SOSFast.NewsHead@4439f31e</td></tr>
+<tr>
+<td title='SOSFastAutomation.SOSFast.NewsHead.testParameter()'><b>testParameter</b><br>Test class: SOSFastAutomation.SOSFast.NewsHead</td>
+<td></td>
+<td>13</td>
+<td>SOSFastAutomation.SOSFast.NewsHead@4439f31e</td></tr>
+</table><p>
+</body>
+</html>
