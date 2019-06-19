@@ -8,15 +8,11 @@
           <include name="setup"/>
           <include name="verifySignIn"/>
           <include name="tearDown"/>
+          <include name="verifyLogin"/>
+          <include name="verifySignButton"/>
+          <include name="VerifyFilter"/>
         </methods>
       </class> <!-- SOSFastAutomation.SOSFast.ManageProfile -->
-      <class name="SOSFastAutomation.SOSFast.Details">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifySignIn"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- SOSFastAutomation.SOSFast.Details -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

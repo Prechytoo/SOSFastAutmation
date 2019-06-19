@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="wait" value="1000"/>
-    <parameter name="browser" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SOSFastAutomation.SOSFast.News">
+      <class name="SOSFastAutomation.SOSFast.ManageProfile">
         <methods>
-<<<<<<< HEAD
-          <include name="tearDown"/>
-=======
-          <include name="searchblue"/>
->>>>>>> 6403890666686a1a7a5560273fb333c480231362
           <include name="setup"/>
-          <include name="deshboardbtn"/>
+          <include name="verifySignIn"/>
+          <include name="tearDown"/>
+          <include name="verifyLogin"/>
+          <include name="verifySignButton"/>
+          <include name="VerifyFilter"/>
         </methods>
-      </class> <!-- SOSFastAutomation.SOSFast.News -->
+      </class> <!-- SOSFastAutomation.SOSFast.ManageProfile -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

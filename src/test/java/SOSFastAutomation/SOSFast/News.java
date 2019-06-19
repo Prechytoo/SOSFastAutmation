@@ -11,7 +11,7 @@ public class News {
 
 	@BeforeTest
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Bobby Carelse\\Documents\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.sosfast.co.za/");
 	}

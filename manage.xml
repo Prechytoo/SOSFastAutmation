@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <parameter name = "browser" value = "headless"/>
-  <parameter name = "wait" value = "2000"/>
+  <parameter name = "wait" value = "0"/>
     <classes>
       <class name="SOSFastAutomation.SOSFast.ManageProfile"/>
     </classes>
