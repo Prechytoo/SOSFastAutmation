@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SOSFastAutomation.SOSFast.News">
+      <class name="SOSFastAutomation.SOSFast.ManageProfile">
         <methods>
-          <include name="searchblue"/>
           <include name="setup"/>
-          <include name="deshboardbtn"/>
+          <include name="verifySignIn"/>
+          <include name="tearDown"/>
+          <include name="verifyLogin"/>
+          <include name="verifySignButton"/>
+          <include name="VerifyFilter"/>
         </methods>
-      </class> <!-- SOSFastAutomation.SOSFast.News -->
+      </class> <!-- SOSFastAutomation.SOSFast.ManageProfile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
