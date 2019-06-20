@@ -14,7 +14,7 @@ public class Stations {
 	
 	@BeforeTest
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+		
 		driver = new ChromeDriver();
 		driver.get("https://www.sosfast.co.za/");
 	}

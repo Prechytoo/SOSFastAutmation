@@ -30,7 +30,7 @@ public class headbrowser {
 		// Check if parameter passed as 'chrome'
 		else if (browser.equalsIgnoreCase("chrome")) {
 			// set path to chromedriver.exe
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Bobby Carelse\\Documents\\chromedriver.exe");
+			
 			// create chrome instance
 			driver = new ChromeDriver();
 		} else {

@@ -18,8 +18,6 @@ public class NewsHead {
 	public void setup(String browser) throws Exception {
 		
 		if (browser.equalsIgnoreCase("headless")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Bobby Carelse\\Documents\\chromedriver.exe");
-
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("headless");
 			options.addArguments("window-size=1200x600");
@@ -29,7 +27,7 @@ public class NewsHead {
 		// Check if parameter passed as 'chrome'
 		else if (browser.equalsIgnoreCase("chrome")) {
 			// set path to chromedriver.exe
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Bobby Carelse\\Documents\\chromedriver.exe");
+			
 			// create chrome instance
 			driver = new ChromeDriver();
 		} else {
