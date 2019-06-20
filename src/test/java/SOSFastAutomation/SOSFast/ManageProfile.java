@@ -24,7 +24,7 @@ public class ManageProfile {
 	public void setup(String browser, long wait) {
 		this.wait = wait;
 		if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+			
 			driver = new ChromeDriver();
 			
 		} else if (browser.equalsIgnoreCase("headless")) {
