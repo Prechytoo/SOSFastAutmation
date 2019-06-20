@@ -64,12 +64,11 @@ public class Details {
 		driver.findElement(By.xpath("//button[@id='sigin-submit']")).click();
 		System.out.println("submit");
 	}
-
 	@Test(priority = 4)
 	public void verifyIcon() throws InterruptedException {
 		if (!driver.findElement(By.xpath("//li[@id='app-user-image-icon']")).isDisplayed())
 			;
-		System.out.println("I mage display");
+		System.out.println("Image display");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//li[@id='app-user-image-icon']")).click();
 		System.out.println("icon clicked");
