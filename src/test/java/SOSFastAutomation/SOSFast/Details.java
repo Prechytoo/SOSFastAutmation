@@ -43,7 +43,7 @@ public class Details {
 		driver.findElement(By.xpath("//label[contains(text(),'SOSFast Mobile App')]"));
 		System.out.println("SOSFast Moible APP");
 		driver.findElement(By.id("signIn")).click();
-		System.out.println("SingIn");
+		System.out.println("SignIn");
 	}
 
 	@Test(priority = 2)
