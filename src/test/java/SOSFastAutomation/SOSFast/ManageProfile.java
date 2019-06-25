@@ -28,7 +28,6 @@ public class ManageProfile {
 			driver = new ChromeDriver();
 			
 		} else if (browser.equalsIgnoreCase("headless")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 			ChromeOptions options = new ChromeOptions(); // telling the app to open with headless driver
 			options.addArguments("headless");
 			options.addArguments("window-size=1200x600"); // give it a size to open the app
