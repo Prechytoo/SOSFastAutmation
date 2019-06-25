@@ -6,6 +6,7 @@
   <parameter name = "wait" value = "0"/>
     <classes>
       <class name="SOSFastAutomation.SOSFast.ManageProfile"/>
+      <class name="SOSFastAutomation.SOSFast.Details" />
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
