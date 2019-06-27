@@ -1,7 +1,5 @@
 package SOSFastAutomation.SOSFast;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -36,12 +34,12 @@ public class ManageProfile {
 		}
 	}
 
-	
+
 		@Test (priority=1)
 		public void verifySignIn(){
 			driver.navigate().to("https://www.sosfast.co.za");
 			driver.findElement(By.id("signIn")).click();
-			System.out.println("SingIn");
+			System.out.println("SignIn");
 	
 		}
 		

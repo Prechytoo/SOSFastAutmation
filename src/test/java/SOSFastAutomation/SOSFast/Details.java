@@ -55,7 +55,6 @@ public class Details {
 		System.out.println("password");
 		Thread.sleep(wait);
 	}
-
 	@Test(priority = 3)
 	public void verifySignButton() {
 		// locate the login button and click on it
