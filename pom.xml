@@ -22,8 +22,9 @@
 				<configuration>
 					<!-- Suite testng xml file to consider for test execution -->
 					<suiteXmlFiles>
-					
 						<suiteXmlFile>details.xml</suiteXmlFile>
+						<suiteXmlFile>manage.xml</suiteXmlFile>
+						
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
