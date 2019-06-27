@@ -71,9 +71,9 @@ public class Details {
 		System.out.println("icon clicked");
 		Thread.sleep(2000);
 		Alert alert = driver.switchTo().alert();
-		String print = alert.getText();
-		System.out.println(driver.switchTo().alert().getText());
-		System.out.println(print);
+		//String print = alert.getText();
+		//System.out.println(driver.switchTo().alert().getText());
+		//System.out.println(print);
 		driver.findElement(By.id("")).click();
 		Thread.sleep(2000);
 		alert.accept();
