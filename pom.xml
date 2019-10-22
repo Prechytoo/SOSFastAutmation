@@ -23,8 +23,6 @@
 					<!-- Suite testng xml file to consider for test execution -->
 					<suiteXmlFiles>
 						<suiteXmlFile>details.xml</suiteXmlFile>
-					
-						
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
@@ -101,10 +99,6 @@
 			<artifactId>reportng</artifactId>
 			<version>1.1.4</version>
 		</dependency>
-		<dependency>
-			<groupId>com.google.inject</groupId>
-			<artifactId>guice</artifactId>
-			<version>4.2.0</version>
-		</dependency>
+	
 	</dependencies>
 </project>
